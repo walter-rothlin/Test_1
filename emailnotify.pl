@@ -3,6 +3,7 @@
 #
 # emailnotify.pl - a CGI script which exemplifies e-mail notification.
 # neue Version
+# noch neuere Version 24.9.21 / 11:57
 #
 
 use CGI::Form;
@@ -11,6 +12,7 @@ use Mail::Send;
 $q = new CGI::Form;
 $DATABASEFILE = "licenseplates.db";
 
+print $q->header();
 print $q->header();
 print $q->header();
 print $q->start_html();
